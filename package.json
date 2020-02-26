@@ -1,0 +1,32 @@
+{
+  "name": "widenjs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx concurrently npm:buildjs npm:buildjs:min npm:buildpre npm:buildpre:min npm:buildsass",
+    "buildjs": "npx babel src -o dist/widen.js --source-type module --no-babelrc --watch -s true --source-root src/index.js --module-root src/index.js",
+    "buildpre": "npx babel src -o dist/widen.pre-es6.js --source-type module --watch -s true --source-root src/index.js --module-root src/index.js",
+    "buildjs:min": "npx babel src -o dist/widen.min.js --source-type module --no-babelrc --minified --compact --watch -s true --source-root src/index.js --module-root src/index.js",
+    "buildpre:min": "npx babel src -o dist/widen.pre-es6.min.js --source-type module --minified --compact --watch -s true --source-root src/index.js --module-root src/index.js",
+    "buildsass": "npx sass --watch ./styles:./dist --load-path=./styles "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floffah/widenjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Floffah/widenjs/issues"
+  },
+  "homepage": "https://github.com/Floffah/widenjs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "concurrently": "^5.1.0",
+    "sass": "^1.26.1"
+  }
+}
