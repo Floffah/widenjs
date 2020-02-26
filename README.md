@@ -11,7 +11,7 @@ In the future I want to reach a point where you don't need to write your own sty
 
 ## FaQ
 #### Why is there random commits named backup?
-These are just versions I'm pushing that are backups in case anything happens to anything on my local machine. Most likely these don't mean anything or bring new features and are more probably unstable.
+These are just versions I'm pushing that are backups in case anything happens to anything on my local machine. Most likely these don't mean anything, don't bring new features, and are unstable and not recommended to use.
 
 #### Why is there nothing in the `dist` directory?
 You can find all compiled files in the releases section. If you want to use an unstable version, you have to build your own. To build your own, simply just run `npm test` and it will build them and then watch for file changes and re-build it!
