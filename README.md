@@ -1,4 +1,4 @@
-#WidenJS
+# WidenJS
 This JavaScript library is full of scripts and useful functions I use across all of my websites and applications. I made it public because I thought others might benefit.
 
 The library was written for browsers that supports es6. It relies heavily on classes, es6 functions, and things like that. However, there 2 versions of it. widenjs and widenjs pre-es6. I used Babel's preset-env preset to compile it to a version that is compatible with browser that don't support es6. I have not yet tested this version **but will once the project hits release 1.0.0**, so it is not supported. It is just there in case it is **needed**.
